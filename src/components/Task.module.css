@@ -1,0 +1,98 @@
+.task {
+  min-height: 7.2rem;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: .8rem;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.task + .task {
+  margin: 1.2rem 0;
+}
+
+.isChecked {
+  text-decoration: line-through;
+}
+
+.checkbox input[type="checkbox"]:checked > p {
+  background: red;
+}
+
+.task p {
+  font-size: 1.4rem;
+  flex: 1;
+}
+
+.task button {
+  color: var(--gray-300);
+  transition: all .1s;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.task button:hover {
+  padding: .6rem;
+  border-radius: 4px;
+  color: var(--danger);
+  background: var(--gray-400);
+}
+
+.checkbox {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: .3rem;
+  position: relative;
+}
+
+.checkbox label {
+  display: block;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox label svg {
+  display: none;
+}
+
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px; 
+  appearance: none;
+  opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:focus + label {
+  box-shadow: 0 0 0 2px var(--purple-dark);   
+}
+
+.checkbox input[type="checkbox"]:hover + label {
+  background: rgba(30, 111, 159, 0.2);
+  border: 2px solid var(--blue-dark);
+}
+
+.checkbox input[type="checkbox"]:checked + label {
+  background: var(--purple-dark);
+  border: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label svg {
+  display: block;
+}
+
+.checkbox input[type="checkbox"]:checked + label:hover {
+  background: var(--purple);
+}
+
+
