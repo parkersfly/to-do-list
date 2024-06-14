@@ -1,4 +1,4 @@
-<img scr="./assets/review.mp4" alt="Vídeo curto mostrando o site"/>
+<img scr="/assets/review.mp4" alt="Vídeo curto mostrando o site"/>
 
 #  ToDo 🚩
 
