@@ -1,4 +1,5 @@
-<img scr="/assets/review.mp4" alt="Vídeo curto mostrando o site"/>
+https://github.com/parkersfly/to-do-list/assets/79768077/9f412e23-6553-403c-aeb4-3741b7872c8a
+
 
 #  ToDo 🚩
 
